@@ -17,4 +17,4 @@ RUN bundle install
 RUN rake db:migrate
 RUN rails test
 RUN rails assets:precompile
-CMD [ "rails", "server"]
+CMD ["rails", "server", "-b", "0.0.0.0"]
